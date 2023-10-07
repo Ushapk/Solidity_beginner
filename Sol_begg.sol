@@ -22,4 +22,5 @@ contract Token {
    function burn(address _user, uint _val) public {
      if (bal[_user] >= _val) {
        totsupply -= _val;
+   }
 }

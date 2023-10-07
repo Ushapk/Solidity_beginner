@@ -6,7 +6,7 @@ contract Token {
 // public variables here
     string public tokname="USHA";
     string public tokabbr="PK";
-    uint public totSupply=0;
+    uint public totsupply=0;
 
  // mapping variable here
    mapping(address => uint) public bal;
@@ -14,12 +14,12 @@ contract Token {
 
  // mint function
    function mint(address _user, uint _val) public {
-      totSupply += _val;
+      totsupply += _val;
       bal[_user] += _val;
     }
 
  // burn function
    function burn(address _user, uint _val) public {
      if (bal[_user] >= _val) {
-       totSupply -= _val;
+       totsupply -= _val;
 }

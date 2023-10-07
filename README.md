@@ -20,9 +20,9 @@ tokenname: A public variable that represents the name of the token. In this cont
 
 tokenabbrv: A public variable that represents the abbreviation of the token. In this contract, it is set to "tokabbr".
 
-totSupply: A public variable that stores the total supply of the token. Initially set to 0, it increases when tokens are minted and decreases when tokens are burned.
+totsupply: A public variable that stores the total supply of the token. Initially set to 0, it increases when tokens are minted and decreases when tokens are burned.
 
-balances: A mapping that associates addresses with token balances. Each address's balance is stored as a positive integer.
+bal: A mapping that associates addresses with token balances. Each address's balance is stored as a positive integer.
 
 mint: A function that mints new tokens. It takes an address (_user) and a value (_val) as parameters. It increases the total supply by the specified value and adds that value to the balance of the specified address.
 
